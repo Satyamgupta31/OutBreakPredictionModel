@@ -379,3 +379,33 @@ weighted avg       0.63      0.63      0.63       183
 2025-09-12 12:21:54,870 - INFO - Preprocessed 1 samples with 18 features
 2025-09-12 12:22:05,873 - INFO - Preprocessing data...
 2025-09-12 12:22:05,882 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:59:22,731 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:59:22,792 - INFO - Models loaded from models/
+2025-09-12 12:59:22,792 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:59:22,798 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 12:59:26,569 - INFO - Preprocessing data...
+2025-09-12 12:59:26,598 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 13:14:59,255 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 13:14:59,315 - INFO - Models loaded from models/
+2025-09-12 13:14:59,315 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 13:14:59,319 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 13:18:37,397 - INFO - Preprocessing data...
+2025-09-12 13:18:37,447 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 13:19:05,646 - INFO - Preprocessing data...
+2025-09-12 13:19:05,658 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 13:24:53,149 - INFO - Preprocessing data...
+2025-09-12 13:24:53,175 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 14:04:10,521 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 14:04:10,576 - INFO - Models loaded from models/
+2025-09-12 14:04:10,619 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 14:04:46,572 - INFO - Preprocessing data...
+2025-09-12 14:04:46,601 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 14:09:19,967 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 14:09:20,012 - INFO - Models loaded from models/
+2025-09-12 14:09:20,019 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 14:19:38,195 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 14:19:38,247 - INFO - Models loaded from models/
+2025-09-12 14:19:38,253 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 14:21:31,334 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 14:21:31,389 - INFO - Models loaded from models/
+2025-09-12 14:21:31,395 - INFO - Serving on http://127.0.0.1:5000
