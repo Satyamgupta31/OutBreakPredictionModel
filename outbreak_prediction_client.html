@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outbreak Prediction Client</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .message-box {
+            position: fixed;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: none;
+            text-align: center;
+        }
+        .message-box.success { background-color: #d1fae5; color: #065f46; }
+        .message-box.error { background-color: #fee2e2; color: #991b1b; }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Message Box -->
+    <div id="messageBox" class="message-box"></div>
+
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-2">Outbreak Prediction</h1>
+        <p class="text-center text-gray-500 mb-8">Enter the data below to predict a potential outbreak.</p>
+
+        <form id="predictionForm" class="space-y-6">
+            <!-- Village ID & Date -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                    <label for="village_id" class="block text-sm font-medium text-gray-700">Village ID</label>
+                    <input type="text" id="village_id" value="VILLAGE_001" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
+                    <input type="date" id="date" value="2025-09-12" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+            </div>
+
+            <!-- Case Counts -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                    <label for="diarrhea_cases" class="block text-sm font-medium text-gray-700">Diarrhea Cases</label>
+                    <input type="number" id="diarrhea_cases" value="5" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="vomiting_cases" class="block text-sm font-medium text-gray-700">Vomiting Cases</label>
+                    <input type="number" id="vomiting_cases" value="3" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="fever_cases" class="block text-sm font-medium text-gray-700">Fever Cases</label>
+                    <input type="number" id="fever_cases" value="8" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+            </div>
+
+            <!-- Water & Weather Metrics -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div>
+                    <label for="ph_level" class="block text-sm font-medium text-gray-700">pH Level</label>
+                    <input type="number" step="0.1" id="ph_level" value="6.2" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="turbidity" class="block text-sm font-medium text-gray-700">Turbidity</label>
+                    <input type="number" step="0.1" id="turbidity" value="4.5" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="tds" class="block text-sm font-medium text-gray-700">TDS</label>
+                    <input type="number" id="tds" value="450" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+            </div>
+
+            <!-- Rainfall, Temp, Humidity, Season -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div>
+                    <label for="rainfall" class="block text-sm font-medium text-gray-700">Rainfall</label>
+                    <input type="number" step="0.1" id="rainfall" value="15.2" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="temperature" class="block text-sm font-medium text-gray-700">Temperature</label>
+                    <input type="number" step="0.1" id="temperature" value="32.5" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="humidity" class="block text-sm font-medium text-gray-700">Humidity</label>
+                    <input type="number" step="0.1" id="humidity" value="75" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                </div>
+                <div>
+                    <label for="season" class="block text-sm font-medium text-gray-700">Season</label>
+                    <select id="season" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2 border-2">
+                        <option value="monsoon">Monsoon</option>
+                        <option value="summer">Summer</option>
+                        <option value="winter">Winter</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-xl transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                Predict Outbreak
+            </button>
+        </form>
+
+        <div id="results" class="mt-8 text-center" style="display: none;">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Prediction Results</h2>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <div class="w-full sm:w-1/2">
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Predicted Class</p>
+                        <p id="predicted_class" class="text-3xl font-bold text-gray-900 mt-1"></p>
+                    </div>
+                    <div class="w-full sm:w-1/2">
+                        <p class="text-sm font-medium text-gray-500 uppercase tracking-wide">Confidence Score</p>
+                        <p id="confidence" class="text-3xl font-bold text-gray-900 mt-1"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        // Function to display messages in a custom message box
+        function showMessage(message, type = 'info') {
+            const messageBox = document.getElementById('messageBox');
+            messageBox.textContent = message;
+            messageBox.className = `message-box ${type}`;
+            messageBox.style.display = 'block';
+            setTimeout(() => {
+                messageBox.style.display = 'none';
+            }, 5000);
+        }
+
+        document.getElementById('predictionForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const form = event.target;
+            const resultsDiv = document.getElementById('results');
+            const predictedClassEl = document.getElementById('predicted_class');
+            const confidenceEl = document.getElementById('confidence');
+            const submitButton = form.querySelector('button[type="submit"]');
+
+            // Hide previous results and show loading state
+            resultsDiv.style.display = 'none';
+            submitButton.disabled = true;
+            submitButton.textContent = 'Predicting...';
+
+            const formData = new FormData(form);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key] = isNaN(Number(value)) || key === 'village_id' || key === 'date' || key === 'season' ? value : Number(value);
+            });
+            
+            // Re-map keys to match API payload format
+            data.diarrhea_cases = data.diarrhea_cases;
+            data.vomiting_cases = data.vomiting_cases;
+            data.fever_cases = data.fever_cases;
+            data.ph_level = data.ph_level;
+            data.turbidity = data.turbidity;
+            data.tds = data.tds;
+            data.rainfall = data.rainfall;
+            data.temperature = data.temperature;
+            data.humidity = data.humidity;
+            data.season = data.season;
+
+            try {
+                const response = await fetch('http://127.0.0.1:5000/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || 'Something went wrong on the server.');
+                }
+
+                const result = await response.json();
+                
+                // Display results
+                predictedClassEl.textContent = result.predicted_class;
+                confidenceEl.textContent = `${(result.confidence * 100).toFixed(2)}%`;
+                resultsDiv.style.display = 'block';
+
+            } catch (error) {
+                console.error('Error:', error);
+                showMessage(error.message, 'error');
+            } finally {
+                // Restore button state
+                submitButton.disabled = false;
+                submitButton.textContent = 'Predict Outbreak';
+            }
+        });
+    </script>
+</body>
+</html>

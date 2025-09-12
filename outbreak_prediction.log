@@ -1,0 +1,381 @@
+2025-09-12 09:25:03,789 - INFO - ============================================================
+2025-09-12 09:25:03,789 - INFO - OUTBREAK PREDICTION SYSTEM DEMONSTRATION
+2025-09-12 09:25:03,789 - INFO - ============================================================
+2025-09-12 09:25:03,789 - INFO - 1. Initializing Outbreak Prediction System...
+2025-09-12 09:25:09,284 - ERROR - Failed to connect to MongoDB: No replica set members found yet, Timeout: 5.0s, Topology Description: <TopologyDescription id: 68c399982f9477677b6cbc46, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-flov7yr-shard-00-00.2n3negi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-flov7yr-shard-00-01.2n3negi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('ac-flov7yr-shard-00-02.2n3negi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>
+2025-09-12 09:25:09,285 - INFO - 2. Creating synthetic training data...
+2025-09-12 09:25:09,285 - INFO - Generating synthetic data for testing...
+2025-09-12 09:25:09,315 - ERROR - Error generating synthetic data: 'NoneType' object is not subscriptable
+2025-09-12 09:25:09,316 - INFO - 3. Loading training data...
+2025-09-12 09:25:09,316 - INFO - Loading training data from MongoDB...
+2025-09-12 09:25:09,317 - ERROR - Error loading training data: 'NoneType' object has no attribute 'symptom_reports'
+2025-09-12 09:25:09,317 - ERROR - Failed to load training data!
+2025-09-12 09:25:09,317 - INFO - MongoDB connection closed
+2025-09-12 09:31:36,254 - INFO - ============================================================
+2025-09-12 09:31:36,255 - INFO - OUTBREAK PREDICTION SYSTEM DEMONSTRATION
+2025-09-12 09:31:36,255 - INFO - ============================================================
+2025-09-12 09:31:36,255 - INFO - 1. Initializing Outbreak Prediction System...
+2025-09-12 09:31:38,210 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 09:31:38,210 - INFO - 2. Creating synthetic training data...
+2025-09-12 09:31:38,211 - INFO - Generating synthetic data for testing...
+2025-09-12 09:31:40,568 - INFO - Inserted 915 records into symptom_reports
+2025-09-12 09:31:43,567 - INFO - Inserted 915 records into water_quality
+2025-09-12 09:31:46,568 - INFO - Inserted 915 records into environment
+2025-09-12 09:31:49,677 - INFO - Inserted 915 records into training_data
+2025-09-12 09:31:49,677 - INFO - Synthetic data generation completed successfully!
+2025-09-12 09:31:49,679 - INFO - 3. Loading training data...
+2025-09-12 09:31:49,679 - INFO - Loading training data from MongoDB...
+2025-09-12 09:31:51,038 - ERROR - Error loading training data: Passing 'suffixes' which cause duplicate columns {'_id_x'} is not allowed.
+2025-09-12 09:31:51,039 - ERROR - Failed to load training data!
+2025-09-12 09:31:51,072 - INFO - MongoDB connection closed
+2025-09-12 09:34:35,013 - INFO - ============================================================
+2025-09-12 09:34:35,014 - INFO - OUTBREAK PREDICTION SYSTEM DEMONSTRATION
+2025-09-12 09:34:35,014 - INFO - ============================================================
+2025-09-12 09:34:35,014 - INFO - 1. Initializing Outbreak Prediction System...
+2025-09-12 09:34:35,050 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 09:34:35,051 - INFO - 2. Creating synthetic training data...
+2025-09-12 09:34:35,051 - INFO - Generating synthetic data for testing...
+2025-09-12 09:34:35,175 - INFO - Inserted 915 records into symptom_reports
+2025-09-12 09:34:35,216 - INFO - Inserted 915 records into water_quality
+2025-09-12 09:34:35,250 - INFO - Inserted 915 records into environment
+2025-09-12 09:34:35,271 - INFO - Inserted 915 records into training_data
+2025-09-12 09:34:35,271 - INFO - Synthetic data generation completed successfully!
+2025-09-12 09:34:35,272 - INFO - 3. Loading training data...
+2025-09-12 09:34:35,272 - INFO - Loading training data from MongoDB...
+2025-09-12 09:34:35,312 - INFO - Loaded 915 training records
+2025-09-12 09:34:35,313 - INFO - 4. Training machine learning models...
+2025-09-12 09:34:35,313 - INFO - Starting model training...
+2025-09-12 09:34:35,313 - INFO - Preprocessing data...
+2025-09-12 09:34:35,334 - INFO - Preprocessed 915 samples with 18 features
+2025-09-12 09:34:35,335 - INFO - Outbreak ratio in training data: 51.26%
+2025-09-12 09:34:35,341 - INFO - Training outbreak prediction model...
+2025-09-12 09:34:35,692 - INFO - Outbreak Model - Train Accuracy: 0.985, Test Accuracy: 0.634
+2025-09-12 09:34:37,102 - INFO - Cross-validation scores: 0.650 (+/- 0.054)
+2025-09-12 09:34:37,113 - INFO - Classification Report:
+2025-09-12 09:34:37,117 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.62      0.62      0.62        89
+           1       0.64      0.65      0.65        94
+
+    accuracy                           0.63       183
+   macro avg       0.63      0.63      0.63       183
+weighted avg       0.63      0.63      0.63       183
+
+2025-09-12 09:34:37,121 - INFO - ROC AUC Score: 0.687
+2025-09-12 09:34:37,126 - INFO - Top 10 Most Important Features:
+2025-09-12 09:34:37,127 - INFO -   turbidity: 0.116
+2025-09-12 09:34:37,128 - INFO -   tds: 0.111
+2025-09-12 09:34:37,129 - INFO -   water_quality_score: 0.095
+2025-09-12 09:34:37,129 - INFO -   rainfall: 0.085
+2025-09-12 09:34:37,129 - INFO -   ph_level: 0.084
+2025-09-12 09:34:37,130 - INFO -   humidity: 0.076
+2025-09-12 09:34:37,130 - INFO -   temperature: 0.074
+2025-09-12 09:34:37,130 - INFO -   fever_cases: 0.072
+2025-09-12 09:34:37,130 - INFO -   day_of_year: 0.070
+2025-09-12 09:34:37,130 - INFO -   total_symptom_cases: 0.067
+2025-09-12 09:34:37,130 - INFO - Training anomaly detection model...
+2025-09-12 09:34:37,249 - INFO - Anomaly detection - 10.4% of test data flagged as anomalies
+2025-09-12 09:34:37,250 - INFO - Model training completed successfully!
+2025-09-12 09:34:37,250 - INFO - 5. Saving trained models...
+2025-09-12 09:34:37,318 - INFO - Models saved to models/
+2025-09-12 09:34:37,318 - INFO - 6. Model Performance Metrics:
+2025-09-12 09:34:37,318 - INFO - Loading training data from MongoDB...
+2025-09-12 09:34:37,342 - INFO - Loaded 915 training records
+2025-09-12 09:34:37,343 - INFO - Preprocessing data...
+2025-09-12 09:34:37,355 - INFO - Preprocessed 915 samples with 18 features
+2025-09-12 09:34:37,376 - INFO -    accuracy: 0.634
+2025-09-12 09:34:37,377 - INFO -    auc_score: 0.687
+2025-09-12 09:34:37,377 - INFO -    test_samples: 183
+2025-09-12 09:34:37,377 - INFO -    outbreak_ratio: 0.514
+2025-09-12 09:34:37,377 - INFO -    models_trained: True
+2025-09-12 09:34:37,377 - INFO - 7. Making single village prediction...
+2025-09-12 09:34:37,378 - INFO - Preprocessing data...
+2025-09-12 09:34:37,385 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,394 - INFO -    Single Prediction Result:
+2025-09-12 09:34:37,394 - INFO -     village_id: VILLAGE_001
+2025-09-12 09:34:37,394 - INFO -     date: 2025-09-12
+2025-09-12 09:34:37,394 - INFO -     risk_probability: 0.616
+2025-09-12 09:34:37,395 - INFO -     risk_level: Medium
+2025-09-12 09:34:37,395 - INFO -     anomaly_score: 0.036
+2025-09-12 09:34:37,395 - INFO -     is_anomaly: False
+2025-09-12 09:34:37,395 - INFO -     prediction_timestamp: 2025-09-12T09:34:37.394252
+2025-09-12 09:34:37,395 - INFO - 8. Making batch predictions for all villages...
+2025-09-12 09:34:37,395 - INFO - Starting batch prediction...
+2025-09-12 09:34:37,486 - INFO - Preprocessing data...
+2025-09-12 09:34:37,505 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,515 - INFO - Preprocessing data...
+2025-09-12 09:34:37,525 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,531 - INFO - Preprocessing data...
+2025-09-12 09:34:37,540 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,548 - INFO - Preprocessing data...
+2025-09-12 09:34:37,554 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,561 - INFO - Preprocessing data...
+2025-09-12 09:34:37,568 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,575 - INFO - Preprocessing data...
+2025-09-12 09:34:37,582 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,590 - INFO - Preprocessing data...
+2025-09-12 09:34:37,598 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,605 - INFO - Preprocessing data...
+2025-09-12 09:34:37,614 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,623 - INFO - Preprocessing data...
+2025-09-12 09:34:37,631 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,644 - INFO - Preprocessing data...
+2025-09-12 09:34:37,650 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,659 - INFO - Preprocessing data...
+2025-09-12 09:34:37,666 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,673 - INFO - Preprocessing data...
+2025-09-12 09:34:37,680 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,691 - INFO - Preprocessing data...
+2025-09-12 09:34:37,699 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,706 - INFO - Preprocessing data...
+2025-09-12 09:34:37,715 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,723 - INFO - Preprocessing data...
+2025-09-12 09:34:37,730 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,737 - INFO - Completed batch prediction for 15 villages
+2025-09-12 09:34:37,737 - INFO -    Generated 15 predictions
+2025-09-12 09:34:37,738 - INFO -    Sample Batch Predictions:
+2025-09-12 09:34:37,739 - INFO -     Village VILLAGE_005: High (96.7% probability)
+2025-09-12 09:34:37,739 - INFO -     Village VILLAGE_010: High (91.8% probability)
+2025-09-12 09:34:37,739 - INFO -     Village VILLAGE_012: Low (22.3% probability)
+2025-09-12 09:34:37,740 - INFO - 9. Saving predictions to MongoDB...
+2025-09-12 09:34:37,754 - INFO - Saved 15 predictions to MongoDB
+2025-09-12 09:34:37,754 - INFO -     Predictions saved successfully!
+2025-09-12 09:34:37,755 - INFO - 10. Testing model loading from disk...
+2025-09-12 09:34:37,765 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 09:34:37,921 - INFO - Models loaded from models/
+2025-09-12 09:34:37,922 - INFO -     Models loaded successfully!
+2025-09-12 09:34:37,922 - INFO - Preprocessing data...
+2025-09-12 09:34:37,931 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 09:34:37,939 - INFO -     Test prediction with loaded models successful!
+2025-09-12 09:34:37,939 - INFO - ============================================================
+2025-09-12 09:34:37,939 - INFO - DEMONSTRATION COMPLETED SUCCESSFULLY!
+2025-09-12 09:34:37,940 - INFO - ============================================================
+2025-09-12 09:34:37,940 - INFO - SUMMARY STATISTICS:
+2025-09-12 09:34:37,940 - INFO -   High Risk Villages: 11
+2025-09-12 09:34:37,940 - INFO -   Medium Risk Villages: 2
+2025-09-12 09:34:37,940 - INFO -   Low Risk Villages: 2
+2025-09-12 09:34:37,940 - INFO -   Total Villages Analyzed: 15
+2025-09-12 09:34:37,942 - INFO - MongoDB connection closed
+2025-09-12 09:45:18,516 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 09:45:18,563 - INFO - Models loaded from models/
+2025-09-12 09:45:18,563 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 09:45:18,592 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-12 09:45:18,593 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 10:32:40,213 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 10:32:40,257 - INFO - Models loaded from models/
+2025-09-12 10:32:40,257 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 10:32:40,271 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-12 10:32:40,271 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 10:32:56,253 - INFO - ============================================================
+2025-09-12 10:32:56,253 - INFO - OUTBREAK PREDICTION SYSTEM DEMONSTRATION
+2025-09-12 10:32:56,253 - INFO - ============================================================
+2025-09-12 10:32:56,253 - INFO - 1. Initializing Outbreak Prediction System...
+2025-09-12 10:32:56,287 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 10:32:56,287 - INFO - 2. Creating synthetic training data...
+2025-09-12 10:32:56,287 - INFO - Generating synthetic data for testing...
+2025-09-12 10:32:56,340 - INFO - Inserted 915 records into symptom_reports
+2025-09-12 10:32:56,354 - INFO - Inserted 915 records into water_quality
+2025-09-12 10:32:56,366 - INFO - Inserted 915 records into environment
+2025-09-12 10:32:56,378 - INFO - Inserted 915 records into training_data
+2025-09-12 10:32:56,378 - INFO - Synthetic data generation completed successfully!
+2025-09-12 10:32:56,378 - INFO - 3. Loading training data...
+2025-09-12 10:32:56,379 - INFO - Loading training data from MongoDB...
+2025-09-12 10:32:56,412 - INFO - Loaded 915 training records
+2025-09-12 10:32:56,413 - INFO - 4. Training machine learning models...
+2025-09-12 10:32:56,413 - INFO - Starting model training...
+2025-09-12 10:32:56,414 - INFO - Preprocessing data...
+2025-09-12 10:32:56,427 - INFO - Preprocessed 915 samples with 18 features
+2025-09-12 10:32:56,428 - INFO - Outbreak ratio in training data: 51.26%
+2025-09-12 10:32:56,433 - INFO - Training outbreak prediction model...
+2025-09-12 10:32:56,737 - INFO - Outbreak Model - Train Accuracy: 0.985, Test Accuracy: 0.634
+2025-09-12 10:32:57,999 - INFO - Cross-validation scores: 0.650 (+/- 0.054)
+2025-09-12 10:32:58,010 - INFO - Classification Report:
+2025-09-12 10:32:58,017 - INFO - 
+              precision    recall  f1-score   support
+
+           0       0.62      0.62      0.62        89
+           1       0.64      0.65      0.65        94
+
+    accuracy                           0.63       183
+   macro avg       0.63      0.63      0.63       183
+weighted avg       0.63      0.63      0.63       183
+
+2025-09-12 10:32:58,022 - INFO - ROC AUC Score: 0.687
+2025-09-12 10:32:58,029 - INFO - Top 10 Most Important Features:
+2025-09-12 10:32:58,030 - INFO -   turbidity: 0.116
+2025-09-12 10:32:58,030 - INFO -   tds: 0.111
+2025-09-12 10:32:58,031 - INFO -   water_quality_score: 0.095
+2025-09-12 10:32:58,031 - INFO -   rainfall: 0.085
+2025-09-12 10:32:58,031 - INFO -   ph_level: 0.084
+2025-09-12 10:32:58,031 - INFO -   humidity: 0.076
+2025-09-12 10:32:58,032 - INFO -   temperature: 0.074
+2025-09-12 10:32:58,032 - INFO -   fever_cases: 0.072
+2025-09-12 10:32:58,032 - INFO -   day_of_year: 0.070
+2025-09-12 10:32:58,032 - INFO -   total_symptom_cases: 0.067
+2025-09-12 10:32:58,033 - INFO - Training anomaly detection model...
+2025-09-12 10:32:58,151 - INFO - Anomaly detection - 10.4% of test data flagged as anomalies
+2025-09-12 10:32:58,151 - INFO - Model training completed successfully!
+2025-09-12 10:32:58,152 - INFO - 5. Saving trained models...
+2025-09-12 10:32:58,212 - INFO - Models saved to models/
+2025-09-12 10:32:58,212 - INFO - 6. Model Performance Metrics:
+2025-09-12 10:32:58,212 - INFO - Loading training data from MongoDB...
+2025-09-12 10:32:58,234 - INFO - Loaded 915 training records
+2025-09-12 10:32:58,235 - INFO - Preprocessing data...
+2025-09-12 10:32:58,245 - INFO - Preprocessed 915 samples with 18 features
+2025-09-12 10:32:58,264 - INFO -    accuracy: 0.634
+2025-09-12 10:32:58,264 - INFO -    auc_score: 0.687
+2025-09-12 10:32:58,264 - INFO -    test_samples: 183
+2025-09-12 10:32:58,265 - INFO -    outbreak_ratio: 0.514
+2025-09-12 10:32:58,265 - INFO -    models_trained: True
+2025-09-12 10:32:58,265 - INFO - 7. Making single village prediction...
+2025-09-12 10:32:58,266 - INFO - Preprocessing data...
+2025-09-12 10:32:58,274 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,281 - INFO -    Single Prediction Result:
+2025-09-12 10:32:58,282 - INFO -     village_id: VILLAGE_001
+2025-09-12 10:32:58,282 - INFO -     date: 2025-09-12
+2025-09-12 10:32:58,282 - INFO -     risk_probability: 0.616
+2025-09-12 10:32:58,282 - INFO -     risk_level: Medium
+2025-09-12 10:32:58,283 - INFO -     anomaly_score: 0.036
+2025-09-12 10:32:58,283 - INFO -     is_anomaly: False
+2025-09-12 10:32:58,284 - INFO -     prediction_timestamp: 2025-09-12T10:32:58.281615
+2025-09-12 10:32:58,284 - INFO - 8. Making batch predictions for all villages...
+2025-09-12 10:32:58,284 - INFO - Starting batch prediction...
+2025-09-12 10:32:58,337 - INFO - Preprocessing data...
+2025-09-12 10:32:58,343 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,359 - INFO - Preprocessing data...
+2025-09-12 10:32:58,367 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,374 - INFO - Preprocessing data...
+2025-09-12 10:32:58,381 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,387 - INFO - Preprocessing data...
+2025-09-12 10:32:58,393 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,401 - INFO - Preprocessing data...
+2025-09-12 10:32:58,408 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,415 - INFO - Preprocessing data...
+2025-09-12 10:32:58,421 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,432 - INFO - Preprocessing data...
+2025-09-12 10:32:58,439 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,446 - INFO - Preprocessing data...
+2025-09-12 10:32:58,452 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,459 - INFO - Preprocessing data...
+2025-09-12 10:32:58,465 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,473 - INFO - Preprocessing data...
+2025-09-12 10:32:58,480 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,488 - INFO - Preprocessing data...
+2025-09-12 10:32:58,496 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,503 - INFO - Preprocessing data...
+2025-09-12 10:32:58,509 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,516 - INFO - Preprocessing data...
+2025-09-12 10:32:58,523 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,530 - INFO - Preprocessing data...
+2025-09-12 10:32:58,537 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,545 - INFO - Preprocessing data...
+2025-09-12 10:32:58,552 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,558 - INFO - Completed batch prediction for 15 villages
+2025-09-12 10:32:58,559 - INFO -    Generated 15 predictions
+2025-09-12 10:32:58,559 - INFO -    Sample Batch Predictions:
+2025-09-12 10:32:58,559 - INFO -     Village VILLAGE_001: Medium (31.4% probability)
+2025-09-12 10:32:58,559 - INFO -     Village VILLAGE_008: High (82.1% probability)
+2025-09-12 10:32:58,560 - INFO -     Village VILLAGE_011: High (91.5% probability)
+2025-09-12 10:32:58,560 - INFO - 9. Saving predictions to MongoDB...
+2025-09-12 10:32:58,563 - INFO - Saved 15 predictions to MongoDB
+2025-09-12 10:32:58,563 - INFO -     Predictions saved successfully!
+2025-09-12 10:32:58,563 - INFO - 10. Testing model loading from disk...
+2025-09-12 10:32:58,571 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 10:32:58,641 - INFO - Models loaded from models/
+2025-09-12 10:32:58,642 - INFO -     Models loaded successfully!
+2025-09-12 10:32:58,642 - INFO - Preprocessing data...
+2025-09-12 10:32:58,650 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 10:32:58,657 - INFO -     Test prediction with loaded models successful!
+2025-09-12 10:32:58,657 - INFO - ============================================================
+2025-09-12 10:32:58,658 - INFO - DEMONSTRATION COMPLETED SUCCESSFULLY!
+2025-09-12 10:32:58,658 - INFO - ============================================================
+2025-09-12 10:32:58,659 - INFO - SUMMARY STATISTICS:
+2025-09-12 10:32:58,659 - INFO -   High Risk Villages: 11
+2025-09-12 10:32:58,660 - INFO -   Medium Risk Villages: 2
+2025-09-12 10:32:58,660 - INFO -   Low Risk Villages: 2
+2025-09-12 10:32:58,660 - INFO -   Total Villages Analyzed: 15
+2025-09-12 10:32:58,662 - INFO - MongoDB connection closed
+2025-09-12 10:33:42,493 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 10:33:42,541 - INFO - Models loaded from models/
+2025-09-12 10:33:42,542 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 10:33:42,562 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-12 10:33:42,563 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 10:35:47,927 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 10:35:47,984 - INFO - Models loaded from models/
+2025-09-12 10:35:47,984 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 10:38:33,449 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 10:38:33,494 - INFO - Models loaded from models/
+2025-09-12 10:38:33,494 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 10:38:33,497 - INFO - Serving on http://0.0.0.0:5000
+2025-09-12 11:58:04,621 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 11:58:04,659 - INFO - Models loaded from models/
+2025-09-12 11:58:04,660 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 11:58:04,691 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-12 11:58:04,691 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 12:05:46,250 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:05:46,292 - INFO - Models loaded from models/
+2025-09-12 12:05:46,292 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:05:46,306 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-12 12:05:46,306 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 12:12:19,994 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:12:20,034 - INFO - Models loaded from models/
+2025-09-12 12:12:20,034 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:12:20,050 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-12 12:12:20,050 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-12 12:14:41,770 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:14:41,816 - INFO - Models loaded from models/
+2025-09-12 12:14:41,816 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:14:41,820 - INFO - Serving on http://0.0.0.0:5000
+2025-09-12 12:19:25,502 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:19:25,544 - INFO - Models loaded from models/
+2025-09-12 12:19:25,544 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:19:25,547 - INFO - Serving on http://0.0.0.0:5000
+2025-09-12 12:19:41,770 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:19:41,808 - INFO - Models loaded from models/
+2025-09-12 12:19:41,808 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:19:41,811 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 12:20:08,402 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-12 12:20:08,443 - INFO - Models loaded from models/
+2025-09-12 12:20:08,444 - INFO - API initialized successfully: System initialized with existing models
+2025-09-12 12:20:08,447 - INFO - Serving on http://127.0.0.1:5000
+2025-09-12 12:20:12,003 - INFO - Preprocessing data...
+2025-09-12 12:20:12,025 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:20:41,348 - INFO - Preprocessing data...
+2025-09-12 12:20:41,356 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:20:57,963 - INFO - Preprocessing data...
+2025-09-12 12:20:57,971 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:04,885 - INFO - Preprocessing data...
+2025-09-12 12:21:04,892 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:11,267 - INFO - Preprocessing data...
+2025-09-12 12:21:11,274 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:18,301 - INFO - Preprocessing data...
+2025-09-12 12:21:18,311 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:28,912 - INFO - Preprocessing data...
+2025-09-12 12:21:28,921 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:39,315 - INFO - Preprocessing data...
+2025-09-12 12:21:39,326 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:49,649 - INFO - Preprocessing data...
+2025-09-12 12:21:49,660 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:21:54,859 - INFO - Preprocessing data...
+2025-09-12 12:21:54,870 - INFO - Preprocessed 1 samples with 18 features
+2025-09-12 12:22:05,873 - INFO - Preprocessing data...
+2025-09-12 12:22:05,882 - INFO - Preprocessed 1 samples with 18 features
