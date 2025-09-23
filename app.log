@@ -1,0 +1,990 @@
+2025-09-21 19:03:58,542 - INFO - Connected to MongoDB database: healthmonitoring
+2025-09-21 19:03:58,550 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-21 19:03:58,596 - INFO - Models loaded from models/
+2025-09-21 19:03:58,597 - INFO - Outbreak Prediction API initialized successfully
+2025-09-21 19:03:58,597 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-21 19:03:59,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-21 19:03:59,892 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-21 19:07:55,740 - INFO - 127.0.0.1 - - [21/Sep/2025 19:07:55] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:07:56,194 - INFO - 127.0.0.1 - - [21/Sep/2025 19:07:56] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:08:24,367 - INFO - 127.0.0.1 - - [21/Sep/2025 19:08:24] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:08:24,466 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:08:25,167 - ERROR - Chat error: 'language_name'
+2025-09-21 19:08:25,169 - INFO - 127.0.0.1 - - [21/Sep/2025 19:08:25] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:08:34,861 - INFO - 127.0.0.1 - - [21/Sep/2025 19:08:34] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:08:35,171 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:08:35,171 - ERROR - Chat error: 'language_name'
+2025-09-21 19:08:35,172 - INFO - 127.0.0.1 - - [21/Sep/2025 19:08:35] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:09:13,991 - INFO - 127.0.0.1 - - [21/Sep/2025 19:09:13] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:09:14,107 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:09:14,292 - ERROR - Chat error: 'language_name'
+2025-09-21 19:09:14,293 - INFO - 127.0.0.1 - - [21/Sep/2025 19:09:14] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:09:43,364 - INFO - 127.0.0.1 - - [21/Sep/2025 19:09:43] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:09:43,987 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:09:43,987 - ERROR - Chat error: 'language_name'
+2025-09-21 19:09:43,988 - INFO - 127.0.0.1 - - [21/Sep/2025 19:09:43] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:10:11,510 - INFO - 127.0.0.1 - - [21/Sep/2025 19:10:11] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:10:11,781 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:10:11,970 - ERROR - Chat error: 'language_name'
+2025-09-21 19:10:11,971 - INFO - 127.0.0.1 - - [21/Sep/2025 19:10:11] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:11:32,199 - INFO - 127.0.0.1 - - [21/Sep/2025 19:11:32] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:11:33,267 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:11:33,708 - ERROR - Chat error: 'language_name'
+2025-09-21 19:11:33,710 - INFO - 127.0.0.1 - - [21/Sep/2025 19:11:33] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:13:50,265 - INFO - 127.0.0.1 - - [21/Sep/2025 19:13:50] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:13:50,546 - INFO - 127.0.0.1 - - [21/Sep/2025 19:13:50] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:15:12,258 - INFO - 127.0.0.1 - - [21/Sep/2025 19:15:12] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:15:12,393 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:15:12,395 - ERROR - Chat error: 'language_name'
+2025-09-21 19:15:12,396 - INFO - 127.0.0.1 - - [21/Sep/2025 19:15:12] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+2025-09-21 19:24:04,481 - INFO - Connected to MongoDB database: healthmonitoring
+2025-09-21 19:24:04,512 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-21 19:24:04,557 - INFO - Models loaded from models/
+2025-09-21 19:24:04,557 - INFO - Outbreak Prediction API initialized successfully
+2025-09-21 19:24:04,558 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-21 19:24:05,855 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-21 19:24:05,856 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-21 19:24:16,078 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:16] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:24:18,092 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:18] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:24:20,385 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:20] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:24:23,065 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:23] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:24:25,970 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:25] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:24:29,604 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:29] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:24:31,668 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-21 19:24:31,668 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:24:31,669 - INFO - Chat response: language=English, status=error
+2025-09-21 19:24:31,669 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:31] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:24:33,715 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=bn
+2025-09-21 19:24:33,716 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:24:33,716 - INFO - Chat response: language=Bengali, status=error
+2025-09-21 19:24:33,717 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:33] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:24:35,763 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=hi
+2025-09-21 19:24:35,764 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:24:35,765 - INFO - Chat response: language=Hindi, status=error
+2025-09-21 19:24:35,766 - INFO - 127.0.0.1 - - [21/Sep/2025 19:24:35] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:28:43,652 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:43] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:28:45,703 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:45] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:28:48,109 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:48] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:28:51,479 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:51] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:28:53,830 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:53] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:28:57,852 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:57] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:28:59,891 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-21 19:28:59,892 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:28:59,892 - INFO - Chat response: language=English, status=error
+2025-09-21 19:28:59,893 - INFO - 127.0.0.1 - - [21/Sep/2025 19:28:59] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:29:01,946 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=bn
+2025-09-21 19:29:01,947 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:29:01,947 - INFO - Chat response: language=Bengali, status=error
+2025-09-21 19:29:01,948 - INFO - 127.0.0.1 - - [21/Sep/2025 19:29:01] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:29:03,993 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=hi
+2025-09-21 19:29:03,993 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:29:03,993 - INFO - Chat response: language=Hindi, status=error
+2025-09-21 19:29:03,993 - INFO - 127.0.0.1 - - [21/Sep/2025 19:29:03] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:29:36,914 - INFO - 127.0.0.1 - - [21/Sep/2025 19:29:36] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:29:36,960 - INFO - 127.0.0.1 - - [21/Sep/2025 19:29:36] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:29:37,175 - INFO - 127.0.0.1 - - [21/Sep/2025 19:29:37] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:29:37,313 - INFO - 127.0.0.1 - - [21/Sep/2025 19:29:37] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:30:21,738 - INFO - 127.0.0.1 - - [21/Sep/2025 19:30:21] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:30:21,965 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:30:21,965 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:30:21,965 - INFO - Chat response: language=Hindi, status=error
+2025-09-21 19:30:21,966 - INFO - 127.0.0.1 - - [21/Sep/2025 19:30:21] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:30:54,537 - INFO - 127.0.0.1 - - [21/Sep/2025 19:30:54] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:30:54,716 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:30:54,716 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:30:54,716 - INFO - Chat response: language=Hindi, status=error
+2025-09-21 19:30:54,717 - INFO - 127.0.0.1 - - [21/Sep/2025 19:30:54] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:31:45,086 - INFO - 127.0.0.1 - - [21/Sep/2025 19:31:45] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:31:45,276 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:31:45,276 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:31:45,277 - INFO - Chat response: language=Hindi, status=error
+2025-09-21 19:31:45,278 - INFO - 127.0.0.1 - - [21/Sep/2025 19:31:45] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:31:51,802 - INFO - 127.0.0.1 - - [21/Sep/2025 19:31:51] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:31:52,044 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:31:52,045 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:31:52,045 - INFO - Chat response: language=English, status=error
+2025-09-21 19:31:52,046 - INFO - 127.0.0.1 - - [21/Sep/2025 19:31:52] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:33:29,413 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:29] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:33:29,705 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:29] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:33:32,752 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:32] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:33:36,466 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:36] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:33:36,472 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:36] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:33:36,590 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:36] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:33:39,795 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:39] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:33:39,956 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:33:39,957 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:33:39,957 - INFO - Chat response: language=English, status=error
+2025-09-21 19:33:39,958 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:39] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:33:41,054 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:41] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:33:41,137 - INFO - 127.0.0.1 - - [21/Sep/2025 19:33:41] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:38:40,588 - INFO - 127.0.0.1 - - [21/Sep/2025 19:38:40] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:38:40,708 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:38:40,708 - ERROR - Error generating multilingual response: Database objects do not implement truth value testing or bool(). Please compare with None instead: database is not None
+2025-09-21 19:38:40,708 - INFO - Chat response: language=English, status=error
+2025-09-21 19:38:40,709 - INFO - 127.0.0.1 - - [21/Sep/2025 19:38:40] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:39:02,146 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-21 19:39:02,193 - INFO - Models loaded from models/
+2025-09-21 19:39:02,194 - INFO - Outbreak Prediction API initialized successfully
+2025-09-21 19:39:02,194 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-21 19:39:03,638 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-21 19:39:03,638 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-21 19:39:09,054 - INFO - 127.0.0.1 - - [21/Sep/2025 19:39:09] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:39:09,581 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:39:09,798 - INFO - Connected to MongoDB database: healthmonitoring
+2025-09-21 19:39:09,801 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:39:15,271 - INFO - Chat response: language=English, status=success
+2025-09-21 19:39:15,271 - INFO - 127.0.0.1 - - [21/Sep/2025 19:39:15] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:39:33,720 - INFO - 127.0.0.1 - - [21/Sep/2025 19:39:33] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:39:34,193 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:39:34,196 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:39:39,551 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:39:39,553 - INFO - 127.0.0.1 - - [21/Sep/2025 19:39:39] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:40:24,100 - INFO - 127.0.0.1 - - [21/Sep/2025 19:40:24] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:40:24,434 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:40:24,439 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:40:28,526 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:40:28,527 - INFO - 127.0.0.1 - - [21/Sep/2025 19:40:28] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:40:38,845 - INFO - 127.0.0.1 - - [21/Sep/2025 19:40:38] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:40:39,746 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:40:39,748 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:40:46,220 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:40:46,221 - INFO - 127.0.0.1 - - [21/Sep/2025 19:40:46] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:44:43,484 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-21 19:44:43,536 - INFO - Models loaded from models/
+2025-09-21 19:44:43,537 - INFO - Outbreak Prediction API initialized successfully
+2025-09-21 19:44:43,537 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-21 19:44:44,947 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-21 19:44:44,948 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-21 19:46:57,563 - INFO - 127.0.0.1 - - [21/Sep/2025 19:46:57] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:46:57,720 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:46:57,736 - INFO - Connected to MongoDB database: healthmonitoring
+2025-09-21 19:46:57,738 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:47:01,682 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 19:47:02,528 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 19:47:02,681 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 19:47:02,682 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:47:02,682 - INFO - 127.0.0.1 - - [21/Sep/2025 19:47:02] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:47:20,972 - INFO - 127.0.0.1 - - [21/Sep/2025 19:47:20] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:47:21,108 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:47:21,111 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:47:23,533 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:47:23,533 - INFO - 127.0.0.1 - - [21/Sep/2025 19:47:23] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:47:49,555 - INFO - 127.0.0.1 - - [21/Sep/2025 19:47:49] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:47:49,663 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:47:49,666 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:47:50,452 - INFO - Chat response: language=English, status=success
+2025-09-21 19:47:50,454 - INFO - 127.0.0.1 - - [21/Sep/2025 19:47:50] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:48:02,149 - INFO - 127.0.0.1 - - [21/Sep/2025 19:48:02] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:48:02,237 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:48:02,240 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:48:02,962 - INFO - Chat response: language=English, status=success
+2025-09-21 19:48:02,963 - INFO - 127.0.0.1 - - [21/Sep/2025 19:48:02] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:48:04,583 - INFO - 127.0.0.1 - - [21/Sep/2025 19:48:04] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:48:05,130 - INFO - 127.0.0.1 - - [21/Sep/2025 19:48:05] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:48:10,274 - INFO - 127.0.0.1 - - [21/Sep/2025 19:48:10] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:48:10,371 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:48:10,376 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:48:11,062 - INFO - Chat response: language=English, status=success
+2025-09-21 19:48:11,063 - INFO - 127.0.0.1 - - [21/Sep/2025 19:48:11] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:50:26,456 - INFO - 127.0.0.1 - - [21/Sep/2025 19:50:26] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:50:27,431 - INFO - 127.0.0.1 - - [21/Sep/2025 19:50:27] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:51:59,013 - INFO - 127.0.0.1 - - [21/Sep/2025 19:51:59] "GET /health HTTP/1.1" 200 -
+2025-09-21 19:51:59,391 - INFO - 127.0.0.1 - - [21/Sep/2025 19:51:59] "GET /languages HTTP/1.1" 200 -
+2025-09-21 19:52:02,503 - INFO - 127.0.0.1 - - [21/Sep/2025 19:52:02] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:52:02,671 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:52:02,677 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:52:03,855 - INFO - Chat response: language=English, status=success
+2025-09-21 19:52:03,856 - INFO - 127.0.0.1 - - [21/Sep/2025 19:52:03] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:52:33,179 - INFO - 127.0.0.1 - - [21/Sep/2025 19:52:33] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:52:33,479 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:52:33,483 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:52:34,335 - INFO - Chat response: language=English, status=success
+2025-09-21 19:52:34,336 - INFO - 127.0.0.1 - - [21/Sep/2025 19:52:34] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:52:52,918 - INFO - 127.0.0.1 - - [21/Sep/2025 19:52:52] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:52:53,746 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:52:53,752 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:52:54,538 - INFO - Chat response: language=English, status=success
+2025-09-21 19:52:54,539 - INFO - 127.0.0.1 - - [21/Sep/2025 19:52:54] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:53:40,528 - INFO - 127.0.0.1 - - [21/Sep/2025 19:53:40] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:53:41,148 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:53:41,154 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:53:42,036 - INFO - Chat response: language=English, status=success
+2025-09-21 19:53:42,038 - INFO - 127.0.0.1 - - [21/Sep/2025 19:53:42] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:54:06,384 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:06] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:54:07,328 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:54:07,330 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:54:08,152 - INFO - Chat response: language=English, status=success
+2025-09-21 19:54:08,154 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:08] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:54:17,385 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:17] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:54:17,543 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 19:54:17,547 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:54:18,354 - INFO - Chat response: language=English, status=success
+2025-09-21 19:54:18,355 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:18] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:54:26,173 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:26] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:54:29,467 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:54:29,472 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:54:29,818 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 19:54:30,144 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 19:54:30,516 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 19:54:32,531 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:54:32,533 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:32] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:54:41,696 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:41] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:54:41,909 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 19:54:41,912 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:54:42,185 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 19:54:42,470 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 19:54:42,816 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 19:54:44,921 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 19:54:45,170 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 19:54:46,658 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 19:54:46,659 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 19:54:46,660 - INFO - 127.0.0.1 - - [21/Sep/2025 19:54:46] "POST /chat HTTP/1.1" 200 -
+2025-09-21 19:55:51,337 - INFO - 127.0.0.1 - - [21/Sep/2025 19:55:51] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 19:55:51,494 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=bn
+2025-09-21 19:55:51,499 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 19:55:54,911 - INFO - Chat response: language=Bengali, status=success
+2025-09-21 19:55:54,912 - INFO - 127.0.0.1 - - [21/Sep/2025 19:55:54] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:01:51,345 - INFO - 127.0.0.1 - - [21/Sep/2025 20:01:51] "GET /health HTTP/1.1" 200 -
+2025-09-21 20:01:52,551 - INFO - 127.0.0.1 - - [21/Sep/2025 20:01:52] "GET /languages HTTP/1.1" 200 -
+2025-09-21 20:02:27,276 - INFO - 127.0.0.1 - - [21/Sep/2025 20:02:27] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:02:27,666 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 20:02:27,673 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:02:28,867 - INFO - Chat response: language=English, status=success
+2025-09-21 20:02:28,870 - INFO - 127.0.0.1 - - [21/Sep/2025 20:02:28] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:02:51,732 - INFO - 127.0.0.1 - - [21/Sep/2025 20:02:51] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:02:51,955 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 20:02:51,960 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:02:52,312 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 20:02:52,525 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 20:02:53,135 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 20:02:55,243 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 20:02:55,244 - INFO - 127.0.0.1 - - [21/Sep/2025 20:02:55] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:03:00,050 - INFO - 127.0.0.1 - - [21/Sep/2025 20:03:00] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:03:00,200 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 20:03:00,206 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:03:00,430 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 20:03:00,710 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 20:03:01,517 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 20:03:04,167 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 20:03:04,168 - INFO - 127.0.0.1 - - [21/Sep/2025 20:03:04] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:03:14,574 - INFO - 127.0.0.1 - - [21/Sep/2025 20:03:14] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:03:14,822 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 20:03:14,828 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:03:17,381 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 20:03:18,884 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 20:03:18,888 - INFO - 127.0.0.1 - - [21/Sep/2025 20:03:18] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:03:40,064 - INFO - 127.0.0.1 - - [21/Sep/2025 20:03:40] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:03:40,403 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=bn
+2025-09-21 20:03:40,410 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:03:47,914 - INFO - Chat response: language=Bengali, status=success
+2025-09-21 20:03:47,917 - INFO - 127.0.0.1 - - [21/Sep/2025 20:03:47] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:04:14,656 - INFO - 127.0.0.1 - - [21/Sep/2025 20:04:14] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:04:14,815 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 20:04:14,822 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:04:15,031 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 20:04:15,266 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 20:04:15,504 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 20:04:17,694 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 20:04:17,695 - INFO - 127.0.0.1 - - [21/Sep/2025 20:04:17] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:04:48,276 - INFO - 127.0.0.1 - - [21/Sep/2025 20:04:48] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 20:04:48,434 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 20:04:48,439 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 20:04:50,620 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 20:04:50,622 - INFO - 127.0.0.1 - - [21/Sep/2025 20:04:50] "POST /chat HTTP/1.1" 200 -
+2025-09-21 20:06:12,958 - INFO - 127.0.0.1 - - [21/Sep/2025 20:06:12] "GET /health HTTP/1.1" 200 -
+2025-09-21 20:06:13,505 - INFO - 127.0.0.1 - - [21/Sep/2025 20:06:13] "GET /languages HTTP/1.1" 200 -
+2025-09-21 20:06:13,741 - INFO - 127.0.0.1 - - [21/Sep/2025 20:06:13] "GET /health HTTP/1.1" 200 -
+2025-09-21 20:06:14,163 - INFO - 127.0.0.1 - - [21/Sep/2025 20:06:14] "GET /languages HTTP/1.1" 200 -
+2025-09-21 21:16:47,947 - INFO - 127.0.0.1 - - [21/Sep/2025 21:16:47] "GET /health HTTP/1.1" 200 -
+2025-09-21 21:16:48,266 - INFO - 127.0.0.1 - - [21/Sep/2025 21:16:48] "GET /languages HTTP/1.1" 200 -
+2025-09-21 21:16:52,619 - INFO - 127.0.0.1 - - [21/Sep/2025 21:16:52] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 21:16:52,809 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-21 21:16:52,826 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 21:16:53,812 - INFO - Chat response: language=English, status=success
+2025-09-21 21:16:53,813 - INFO - 127.0.0.1 - - [21/Sep/2025 21:16:53] "POST /chat HTTP/1.1" 200 -
+2025-09-21 21:17:05,218 - INFO - 127.0.0.1 - - [21/Sep/2025 21:17:05] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 21:17:05,375 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 21:17:05,380 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 21:17:05,755 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 21:17:06,138 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 21:17:06,487 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 21:17:09,763 - WARNING - Poor translation quality detected, attempt 1
+2025-09-21 21:17:10,322 - WARNING - Poor translation quality detected, attempt 2
+2025-09-21 21:17:11,938 - WARNING - Poor translation quality detected, attempt 3
+2025-09-21 21:17:11,939 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 21:17:11,939 - INFO - 127.0.0.1 - - [21/Sep/2025 21:17:11] "POST /chat HTTP/1.1" 200 -
+2025-09-21 21:17:45,905 - INFO - 127.0.0.1 - - [21/Sep/2025 21:17:45] "POST /detect-language HTTP/1.1" 200 -
+2025-09-21 21:17:46,019 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-21 21:17:46,026 - INFO - Retrieved data for village VILLAGE_001 on date 2025-09-12
+2025-09-21 21:17:48,843 - INFO - Chat response: language=Hindi, status=success
+2025-09-21 21:17:48,845 - INFO - 127.0.0.1 - - [21/Sep/2025 21:17:48] "POST /chat HTTP/1.1" 200 -
+2025-09-21 21:17:54,730 - INFO - 127.0.0.1 - - [21/Sep/2025 21:17:54] "GET /health HTTP/1.1" 200 -
+2025-09-21 21:17:55,196 - INFO - 127.0.0.1 - - [21/Sep/2025 21:17:55] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:24:21,499 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-22 11:24:21,568 - INFO - Models loaded from models/
+2025-09-22 11:24:21,568 - INFO - Outbreak Prediction API initialized successfully
+2025-09-22 11:24:21,568 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-22 11:24:22,900 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-22 11:24:22,900 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-22 11:27:21,912 - INFO - 127.0.0.1 - - [22/Sep/2025 11:27:21] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:27:21,915 - INFO - 127.0.0.1 - - [22/Sep/2025 11:27:21] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:27:22,206 - INFO - 127.0.0.1 - - [22/Sep/2025 11:27:22] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:27:22,209 - INFO - 127.0.0.1 - - [22/Sep/2025 11:27:22] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:27:25,113 - INFO - 127.0.0.1 - - [22/Sep/2025 11:27:25] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:27:25,287 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-22 11:27:25,541 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-22 11:27:25,594 - INFO - Retrieved comprehensive data for village VILLAGE_001
+2025-09-22 11:27:32,701 - INFO - Chat response: language=English, status=success
+2025-09-22 11:27:32,702 - INFO - 127.0.0.1 - - [22/Sep/2025 11:27:32] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:28:23,619 - INFO - 127.0.0.1 - - [22/Sep/2025 11:28:23] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:28:23,697 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-22 11:28:23,705 - INFO - Retrieved comprehensive data for village VILLAGE_001
+2025-09-22 11:28:27,816 - INFO - Chat response: language=English, status=success
+2025-09-22 11:28:27,818 - INFO - 127.0.0.1 - - [22/Sep/2025 11:28:27] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:28:49,332 - INFO - 127.0.0.1 - - [22/Sep/2025 11:28:49] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:28:49,428 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:28:49,435 - INFO - Retrieved comprehensive data for village VILLAGE_001
+2025-09-22 11:28:56,548 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:28:56,549 - INFO - 127.0.0.1 - - [22/Sep/2025 11:28:56] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:33:19,251 - INFO - 127.0.0.1 - - [22/Sep/2025 11:33:19] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:33:19,371 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:33:19,378 - INFO - Retrieved comprehensive data for village VILLAGE_001
+2025-09-22 11:33:27,075 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:33:27,076 - INFO - 127.0.0.1 - - [22/Sep/2025 11:33:27] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:33:54,195 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-22 11:33:54,248 - INFO - Models loaded from models/
+2025-09-22 11:33:54,249 - INFO - Outbreak Prediction API initialized successfully
+2025-09-22 11:33:54,249 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-22 11:33:55,591 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-22 11:33:55,592 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-22 11:33:58,753 - INFO - 127.0.0.1 - - [22/Sep/2025 11:33:58] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:33:58,905 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:33:58,920 - INFO - Connected to MongoDB
+2025-09-22 11:33:58,925 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:33:58,925 - INFO - 127.0.0.1 - - [22/Sep/2025 11:33:58] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:34:27,532 - INFO - 127.0.0.1 - - [22/Sep/2025 11:34:27] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:34:27,642 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:34:27,645 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:34:27,646 - INFO - 127.0.0.1 - - [22/Sep/2025 11:34:27] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:34:49,186 - INFO - 127.0.0.1 - - [22/Sep/2025 11:34:49] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:34:49,323 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:34:49,326 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:34:49,327 - INFO - 127.0.0.1 - - [22/Sep/2025 11:34:49] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:35:22,028 - INFO - 127.0.0.1 - - [22/Sep/2025 11:35:22] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:35:22,177 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:35:22,180 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:35:22,182 - INFO - 127.0.0.1 - - [22/Sep/2025 11:35:22] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:35:48,956 - INFO - 127.0.0.1 - - [22/Sep/2025 11:35:48] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:35:49,102 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:35:49,105 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:35:49,107 - INFO - 127.0.0.1 - - [22/Sep/2025 11:35:49] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:36:04,047 - INFO - 127.0.0.1 - - [22/Sep/2025 11:36:04] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:36:04,162 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:36:04,164 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:36:04,166 - INFO - 127.0.0.1 - - [22/Sep/2025 11:36:04] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:41:46,163 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-22 11:41:46,212 - INFO - Models loaded from models/
+2025-09-22 11:41:46,212 - INFO - Outbreak Prediction API initialized successfully
+2025-09-22 11:41:46,212 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-22 11:41:47,501 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-22 11:41:47,502 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-22 11:41:59,012 - INFO - 127.0.0.1 - - [22/Sep/2025 11:41:59] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:41:59,094 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:41:59,111 - INFO - Connected to MongoDB
+2025-09-22 11:41:59,118 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:42:04,841 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:42:04,842 - INFO - 127.0.0.1 - - [22/Sep/2025 11:42:04] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:42:39,883 - INFO - 127.0.0.1 - - [22/Sep/2025 11:42:39] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:42:40,041 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=hi
+2025-09-22 11:42:40,047 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:42:45,000 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:42:45,002 - INFO - 127.0.0.1 - - [22/Sep/2025 11:42:45] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:43:20,223 - INFO - 127.0.0.1 - - [22/Sep/2025 11:43:20] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:43:20,645 - INFO - 127.0.0.1 - - [22/Sep/2025 11:43:20] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:43:20,899 - INFO - 127.0.0.1 - - [22/Sep/2025 11:43:20] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:43:21,265 - INFO - 127.0.0.1 - - [22/Sep/2025 11:43:21] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:47:15,871 - INFO - 127.0.0.1 - - [22/Sep/2025 11:47:15] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:47:16,168 - INFO - 127.0.0.1 - - [22/Sep/2025 11:47:16] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:47:30,384 - INFO - 127.0.0.1 - - [22/Sep/2025 11:47:30] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:47:30,562 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-22 11:47:30,569 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:47:35,247 - INFO - Chat response: language=English, status=success
+2025-09-22 11:47:35,249 - INFO - 127.0.0.1 - - [22/Sep/2025 11:47:35] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:47:37,494 - INFO - 127.0.0.1 - - [22/Sep/2025 11:47:37] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:47:38,007 - INFO - 127.0.0.1 - - [22/Sep/2025 11:47:38] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:50:13,015 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:13] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:50:13,441 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:13] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:50:14,780 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:14] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:50:15,417 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:15] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:50:17,862 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:17] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:50:18,145 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:18] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:50:25,325 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:25] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:50:25,854 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:25] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:50:29,543 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:29] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:50:29,689 - INFO - Chat request: user_type=villager, village_id=VILLAGE_001, language=en
+2025-09-22 11:50:29,699 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:50:34,060 - INFO - Chat response: language=English, status=success
+2025-09-22 11:50:34,063 - INFO - 127.0.0.1 - - [22/Sep/2025 11:50:34] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:51:11,584 - INFO - 127.0.0.1 - - [22/Sep/2025 11:51:11] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:51:11,905 - INFO - 127.0.0.1 - - [22/Sep/2025 11:51:11] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:51:29,793 - INFO - 127.0.0.1 - - [22/Sep/2025 11:51:29] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:51:29,921 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 11:51:29,935 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:51:35,969 - INFO - Chat response: language=English, status=success
+2025-09-22 11:51:35,970 - INFO - 127.0.0.1 - - [22/Sep/2025 11:51:35] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:52:32,061 - INFO - 127.0.0.1 - - [22/Sep/2025 11:52:32] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:52:32,205 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=hi
+2025-09-22 11:52:32,214 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:52:39,588 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:52:39,590 - INFO - 127.0.0.1 - - [22/Sep/2025 11:52:39] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:53:19,192 - INFO - 127.0.0.1 - - [22/Sep/2025 11:53:19] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:53:19,343 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=bn
+2025-09-22 11:53:19,357 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:53:26,699 - INFO - Chat response: language=Bengali, status=success
+2025-09-22 11:53:26,700 - INFO - 127.0.0.1 - - [22/Sep/2025 11:53:26] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:54:08,403 - INFO - 127.0.0.1 - - [22/Sep/2025 11:54:08] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:54:08,733 - INFO - 127.0.0.1 - - [22/Sep/2025 11:54:08] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:56:15,575 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:15] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:56:15,889 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:15] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:56:34,395 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:34] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:56:34,551 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 11:56:34,556 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:56:40,515 - INFO - Chat response: language=English, status=success
+2025-09-22 11:56:40,518 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:40] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:56:49,520 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:49] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:56:50,004 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:50] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:56:54,043 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:54] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:56:54,438 - INFO - 127.0.0.1 - - [22/Sep/2025 11:56:54] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:57:00,463 - INFO - 127.0.0.1 - - [22/Sep/2025 11:57:00] "GET /health HTTP/1.1" 200 -
+2025-09-22 11:57:00,911 - INFO - 127.0.0.1 - - [22/Sep/2025 11:57:00] "GET /languages HTTP/1.1" 200 -
+2025-09-22 11:58:58,250 - INFO - 127.0.0.1 - - [22/Sep/2025 11:58:58] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:58:58,404 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=bn
+2025-09-22 11:58:58,414 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:59:05,909 - INFO - Chat response: language=Bengali, status=success
+2025-09-22 11:59:05,910 - INFO - 127.0.0.1 - - [22/Sep/2025 11:59:05] "POST /chat HTTP/1.1" 200 -
+2025-09-22 11:59:18,704 - INFO - 127.0.0.1 - - [22/Sep/2025 11:59:18] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 11:59:18,867 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=hi
+2025-09-22 11:59:18,875 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 11:59:24,864 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 11:59:24,865 - INFO - 127.0.0.1 - - [22/Sep/2025 11:59:24] "POST /chat HTTP/1.1" 200 -
+2025-09-22 12:00:08,348 - INFO - 127.0.0.1 - - [22/Sep/2025 12:00:08] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 12:00:08,519 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=hi
+2025-09-22 12:00:08,527 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 12:00:21,068 - INFO - Chat response: language=Hindi, status=success
+2025-09-22 12:00:21,070 - INFO - 127.0.0.1 - - [22/Sep/2025 12:00:21] "POST /chat HTTP/1.1" 200 -
+2025-09-22 12:51:15,192 - INFO - 127.0.0.1 - - [22/Sep/2025 12:51:15] "GET /health HTTP/1.1" 200 -
+2025-09-22 12:51:15,791 - INFO - 127.0.0.1 - - [22/Sep/2025 12:51:15] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:08:10,373 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:10] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:08:10,377 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:10] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:08:10,381 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:10] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:08:10,715 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:10] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:08:17,888 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:17] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:08:18,099 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:18] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:08:18,133 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:18] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:08:18,888 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:18] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:08:39,079 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:39] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:08:39,081 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:39] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:08:39,082 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:39] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:08:39,469 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:39] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:08:46,712 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:46] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:08:46,932 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:46] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:08:47,025 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:47] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:08:47,791 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:47] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:08:59,969 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:59] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:08:59,975 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:59] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:08:59,980 - INFO - 127.0.0.1 - - [22/Sep/2025 13:08:59] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:09:00,717 - INFO - 127.0.0.1 - - [22/Sep/2025 13:09:00] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:09:10,878 - INFO - 127.0.0.1 - - [22/Sep/2025 13:09:10] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:09:11,336 - INFO - 127.0.0.1 - - [22/Sep/2025 13:09:11] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:09:11,384 - INFO - 127.0.0.1 - - [22/Sep/2025 13:09:11] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:09:12,071 - INFO - 127.0.0.1 - - [22/Sep/2025 13:09:12] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:12:11,489 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:11] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:12:11,581 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:11] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:12:11,605 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:11] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:12:11,712 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:11] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:12:15,173 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:15] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:12:15,379 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:15] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:12:15,381 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:15] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:12:16,275 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:16] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:12:28,521 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:28] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:12:28,525 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:28] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:12:28,526 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:28] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:12:28,853 - INFO - 127.0.0.1 - - [22/Sep/2025 13:12:28] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:13:23,586 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:23] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:13:23,587 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:23] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:13:23,593 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:23] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:13:23,906 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:23] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:13:31,739 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:31] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:13:31,915 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:31] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:13:31,950 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:31] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:13:33,326 - INFO - 127.0.0.1 - - [22/Sep/2025 13:13:33] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:14:48,341 - INFO - 127.0.0.1 - - [22/Sep/2025 13:14:48] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:14:48,343 - INFO - 127.0.0.1 - - [22/Sep/2025 13:14:48] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:14:48,350 - INFO - 127.0.0.1 - - [22/Sep/2025 13:14:48] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:14:48,889 - INFO - 127.0.0.1 - - [22/Sep/2025 13:14:48] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:14:57,335 - INFO - 127.0.0.1 - - [22/Sep/2025 13:14:57] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:15:01,047 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:15:01,049 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:15:01,052 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:15:01,057 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:15:01,061 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:15:01,070 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:15:01,422 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:01] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:15:03,607 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:03] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:15:03,610 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:03] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:15:03,841 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:03] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:15:04,328 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:04] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:15:17,770 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:17] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:15:17,969 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:17] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:15:18,137 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:18] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:15:18,349 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:18] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:15:34,790 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:34] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:15:35,003 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:35] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:15:35,048 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:35] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:15:35,428 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:35] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:15:37,015 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:37] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:15:37,307 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:37] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:15:37,310 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:37] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:15:37,380 - INFO - 127.0.0.1 - - [22/Sep/2025 13:15:37] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:30:10,908 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:10] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:30:10,998 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:10] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:30:11,012 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:11] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:30:11,539 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:11] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:30:24,269 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:24] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 13:30:24,613 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 13:30:24,650 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 13:30:30,565 - INFO - Chat response: language=English, status=success
+2025-09-22 13:30:30,565 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:30] "POST /chat HTTP/1.1" 200 -
+2025-09-22 13:30:34,767 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:34] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:30:34,917 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:34] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:30:34,953 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:34] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:30:35,720 - INFO - 127.0.0.1 - - [22/Sep/2025 13:30:35] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:33:37,829 - INFO - 127.0.0.1 - - [22/Sep/2025 13:33:37] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:33:37,831 - INFO - 127.0.0.1 - - [22/Sep/2025 13:33:37] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:33:37,834 - INFO - 127.0.0.1 - - [22/Sep/2025 13:33:37] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:33:44,217 - INFO - 127.0.0.1 - - [22/Sep/2025 13:33:44] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:34:34,044 - INFO - 127.0.0.1 - - [22/Sep/2025 13:34:34] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:34:34,046 - INFO - 127.0.0.1 - - [22/Sep/2025 13:34:34] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:34:34,049 - INFO - 127.0.0.1 - - [22/Sep/2025 13:34:34] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:34:35,405 - INFO - 127.0.0.1 - - [22/Sep/2025 13:34:35] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:36:07,715 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:07] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:36:07,744 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:07] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:36:07,750 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:07] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:36:08,024 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:08] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:36:45,825 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:45] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:36:45,852 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:45] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:36:45,853 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:45] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:36:46,215 - INFO - 127.0.0.1 - - [22/Sep/2025 13:36:46] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:37:19,924 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:19] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:37:19,973 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:19] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:37:19,976 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:19] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:37:20,219 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:20] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:37:54,534 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:54] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:37:54,574 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:54] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:37:54,577 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:54] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:37:54,931 - INFO - 127.0.0.1 - - [22/Sep/2025 13:37:54] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:38:13,475 - INFO - 127.0.0.1 - - [22/Sep/2025 13:38:13] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:38:13,675 - INFO - 127.0.0.1 - - [22/Sep/2025 13:38:13] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:38:13,700 - INFO - 127.0.0.1 - - [22/Sep/2025 13:38:13] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:38:14,451 - INFO - 127.0.0.1 - - [22/Sep/2025 13:38:14] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:39:20,733 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:20] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:39:20,735 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:20] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:39:20,737 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:20] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:39:21,140 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:21] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:39:34,235 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:34] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:39:34,478 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:34] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:39:34,493 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:34] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:39:35,715 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:35] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:39:36,655 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:36] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:39:36,873 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:36] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:39:36,878 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:36] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:39:37,534 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:37] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:39:37,639 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:37] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:39:37,715 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:37] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:39:37,720 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:37] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:39:38,086 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:38] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:39:39,653 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:39] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:39:39,884 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:39] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:39:39,888 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:39] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:39:40,317 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:40] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:39:50,234 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:50] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:39:50,402 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:50] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:39:50,430 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:50] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:39:50,823 - INFO - 127.0.0.1 - - [22/Sep/2025 13:39:50] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:41:33,553 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:33] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:41:33,589 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:33] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:41:33,593 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:33] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:41:33,902 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:33] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:41:41,990 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:41] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:41:42,168 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:42] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:41:42,200 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:42] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:41:43,133 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:43] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:41:44,311 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:44] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:41:44,528 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:44] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:41:44,532 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:44] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:41:45,230 - INFO - 127.0.0.1 - - [22/Sep/2025 13:41:45] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:42:06,971 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:06] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:42:06,973 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:06] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:42:06,975 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:06] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:42:07,302 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:07] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:42:14,177 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:14] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:42:14,371 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:14] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:42:14,407 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:14] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:42:15,317 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:15] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:42:19,396 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:19] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:42:19,546 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:19] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:42:19,567 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:19] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:42:20,208 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:20] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:42:29,175 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:29] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:42:29,220 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:29] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:42:29,251 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:29] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:42:29,745 - INFO - 127.0.0.1 - - [22/Sep/2025 13:42:29] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:46:19,652 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:19] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:46:19,657 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:19] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:46:19,664 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:19] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:46:20,008 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:20] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:46:38,462 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:38] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:46:38,983 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:38] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:46:39,453 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:39] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:46:43,996 - INFO - 127.0.0.1 - - [22/Sep/2025 13:46:43] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:47:33,703 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:33] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:47:33,970 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:33] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:47:33,982 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:33] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:47:34,403 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:34] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:47:43,055 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:47:43,215 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:47:43,240 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:47:43,509 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:47:43,732 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:47:43,778 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:47:43,782 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:47:43,978 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:43] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:47:47,800 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:47] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:47:47,948 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:47] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:47:47,955 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:47] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:47:48,224 - INFO - 127.0.0.1 - - [22/Sep/2025 13:47:48] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:49:14,091 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:14] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:49:14,092 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:14] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:49:14,301 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:14] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:49:14,372 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:14] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:49:38,643 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:38] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:49:38,693 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:38] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:49:38,695 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:38] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:49:38,949 - INFO - 127.0.0.1 - - [22/Sep/2025 13:49:38] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:50:52,646 - INFO - 127.0.0.1 - - [22/Sep/2025 13:50:52] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:50:52,672 - INFO - 127.0.0.1 - - [22/Sep/2025 13:50:52] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:50:52,675 - INFO - 127.0.0.1 - - [22/Sep/2025 13:50:52] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:50:52,968 - INFO - 127.0.0.1 - - [22/Sep/2025 13:50:52] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:51:32,925 - INFO - 127.0.0.1 - - [22/Sep/2025 13:51:32] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:51:33,112 - INFO - 127.0.0.1 - - [22/Sep/2025 13:51:33] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:51:33,121 - INFO - 127.0.0.1 - - [22/Sep/2025 13:51:33] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:51:33,695 - INFO - 127.0.0.1 - - [22/Sep/2025 13:51:33] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:51:59,345 - INFO - 127.0.0.1 - - [22/Sep/2025 13:51:59] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 13:51:59,623 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 13:51:59,636 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 13:52:12,796 - INFO - Chat response: language=English, status=success
+2025-09-22 13:52:12,796 - INFO - 127.0.0.1 - - [22/Sep/2025 13:52:12] "POST /chat HTTP/1.1" 200 -
+2025-09-22 13:59:07,446 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-22 13:59:07,561 - INFO - Models loaded from models/
+2025-09-22 13:59:07,561 - INFO - Outbreak Prediction API initialized successfully
+2025-09-22 13:59:07,561 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-22 13:59:08,875 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-22 13:59:08,877 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-22 13:59:42,339 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:42] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:59:42,340 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:42] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:59:42,342 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:42] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:59:42,588 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:42] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:59:54,137 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:54] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 13:59:54,334 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:54] "GET /health HTTP/1.1" 200 -
+2025-09-22 13:59:54,358 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:54] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 13:59:55,178 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:55] "GET /languages HTTP/1.1" 200 -
+2025-09-22 13:59:59,518 - INFO - 127.0.0.1 - - [22/Sep/2025 13:59:59] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 13:59:59,639 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 13:59:59,950 - INFO - Connected to MongoDB
+2025-09-22 13:59:59,954 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 14:00:17,288 - INFO - Chat response: language=English, status=success
+2025-09-22 14:00:17,290 - INFO - 127.0.0.1 - - [22/Sep/2025 14:00:17] "POST /chat HTTP/1.1" 200 -
+2025-09-22 14:04:23,181 - INFO - 127.0.0.1 - - [22/Sep/2025 14:04:23] "GET /health HTTP/1.1" 200 -
+2025-09-22 14:04:23,184 - INFO - 127.0.0.1 - - [22/Sep/2025 14:04:23] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 14:04:23,220 - INFO - 127.0.0.1 - - [22/Sep/2025 14:04:23] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 14:04:23,478 - INFO - 127.0.0.1 - - [22/Sep/2025 14:04:23] "GET /languages HTTP/1.1" 200 -
+2025-09-22 14:04:56,440 - INFO - 127.0.0.1 - - [22/Sep/2025 14:04:56] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 14:04:56,946 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 14:04:56,959 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 14:05:10,429 - INFO - 127.0.0.1 - - [22/Sep/2025 14:05:10] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 14:05:10,586 - INFO - 127.0.0.1 - - [22/Sep/2025 14:05:10] "GET /health HTTP/1.1" 200 -
+2025-09-22 14:05:10,609 - INFO - 127.0.0.1 - - [22/Sep/2025 14:05:10] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 16:34:13,221 - ERROR - Gemini AI generation failed: Timeout of 600.0s exceeded, last exception: 503 WSASend: Connection reset (An existing connection was forcibly closed by the remote host.
+ -- 10054)
+2025-09-22 16:34:13,273 - INFO - Chat response: language=English, status=success
+2025-09-22 16:34:13,330 - INFO - 127.0.0.1 - - [22/Sep/2025 16:34:13] "POST /chat HTTP/1.1" 200 -
+2025-09-22 16:41:58,209 - INFO - 127.0.0.1 - - [22/Sep/2025 16:41:58] "GET /health HTTP/1.1" 200 -
+2025-09-22 16:41:58,212 - INFO - 127.0.0.1 - - [22/Sep/2025 16:41:58] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 16:41:58,234 - INFO - 127.0.0.1 - - [22/Sep/2025 16:41:58] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 16:41:58,993 - INFO - 127.0.0.1 - - [22/Sep/2025 16:41:58] "GET /languages HTTP/1.1" 200 -
+2025-09-22 16:42:33,152 - INFO - 127.0.0.1 - - [22/Sep/2025 16:42:33] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 16:42:33,391 - INFO - 127.0.0.1 - - [22/Sep/2025 16:42:33] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 16:42:33,421 - INFO - 127.0.0.1 - - [22/Sep/2025 16:42:33] "GET /health HTTP/1.1" 200 -
+2025-09-22 16:42:34,256 - INFO - 127.0.0.1 - - [22/Sep/2025 16:42:34] "GET /languages HTTP/1.1" 200 -
+2025-09-22 16:43:01,345 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:01] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 16:43:01,655 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:01] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 16:43:01,912 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:01] "GET /health HTTP/1.1" 200 -
+2025-09-22 16:43:02,432 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:02] "GET /languages HTTP/1.1" 200 -
+2025-09-22 16:43:05,841 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:05] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 16:43:06,016 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:06] "GET /health HTTP/1.1" 200 -
+2025-09-22 16:43:06,020 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:06] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 16:43:06,421 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:06] "GET /languages HTTP/1.1" 200 -
+2025-09-22 16:43:58,090 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:58] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-22 16:43:58,327 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:58] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 16:43:58,340 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:58] "GET /health HTTP/1.1" 200 -
+2025-09-22 16:43:58,624 - INFO - 127.0.0.1 - - [22/Sep/2025 16:43:58] "GET /languages HTTP/1.1" 200 -
+2025-09-22 16:44:05,717 - INFO - 127.0.0.1 - - [22/Sep/2025 16:44:05] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 16:44:05,855 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 16:44:05,902 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 16:44:13,433 - INFO - Chat response: language=English, status=success
+2025-09-22 16:44:13,435 - INFO - 127.0.0.1 - - [22/Sep/2025 16:44:13] "POST /chat HTTP/1.1" 200 -
+2025-09-22 18:47:03,708 - INFO - 127.0.0.1 - - [22/Sep/2025 18:47:03] "GET /health HTTP/1.1" 200 -
+2025-09-22 18:47:04,124 - INFO - 127.0.0.1 - - [22/Sep/2025 18:47:04] "GET /languages HTTP/1.1" 200 -
+2025-09-22 18:47:04,257 - INFO - 127.0.0.1 - - [22/Sep/2025 18:47:04] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-22 18:47:08,977 - INFO - 127.0.0.1 - - [22/Sep/2025 18:47:08] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 18:47:09,065 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 18:47:09,072 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 18:47:16,569 - INFO - Chat response: language=English, status=success
+2025-09-22 18:47:16,573 - INFO - 127.0.0.1 - - [22/Sep/2025 18:47:16] "POST /chat HTTP/1.1" 200 -
+2025-09-22 18:48:36,319 - INFO - 127.0.0.1 - - [22/Sep/2025 18:48:36] "POST /detect-language HTTP/1.1" 200 -
+2025-09-22 18:48:36,478 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-22 18:48:36,485 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-22 18:48:42,951 - INFO - Chat response: language=English, status=success
+2025-09-22 18:48:42,952 - INFO - 127.0.0.1 - - [22/Sep/2025 18:48:42] "POST /chat HTTP/1.1" 200 -
+2025-09-22 18:53:53,829 - INFO - 127.0.0.1 - - [22/Sep/2025 18:53:53] "GET /health HTTP/1.1" 200 -
+2025-09-22 18:53:54,438 - INFO - 127.0.0.1 - - [22/Sep/2025 18:53:54] "GET /languages HTTP/1.1" 200 -
+2025-09-22 18:53:54,656 - INFO - 127.0.0.1 - - [22/Sep/2025 18:53:54] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:28:12,306 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-23 02:28:12,414 - INFO - Models loaded from models/
+2025-09-23 02:28:12,414 - INFO - Outbreak Prediction API initialized successfully
+2025-09-23 02:28:12,415 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-23 02:28:13,736 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-23 02:28:13,736 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 02:28:32,523 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:32] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:28:32,528 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:32] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:28:32,532 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:32] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:28:33,282 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:33] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:28:37,280 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:37] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:28:37,723 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:37] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:28:37,728 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:37] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:28:39,109 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:39] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:28:41,042 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:41] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:28:41,593 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:41] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:28:41,625 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:41] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:28:42,597 - INFO - 127.0.0.1 - - [23/Sep/2025 02:28:42] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:29:19,263 - INFO - 127.0.0.1 - - [23/Sep/2025 02:29:19] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:29:20,058 - INFO - 127.0.0.1 - - [23/Sep/2025 02:29:20] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:29:20,074 - INFO - 127.0.0.1 - - [23/Sep/2025 02:29:20] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:29:20,751 - INFO - 127.0.0.1 - - [23/Sep/2025 02:29:20] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:30:33,075 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:33] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:30:33,077 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:33] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:30:33,080 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:33] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:30:34,779 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:34] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:30:52,312 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:52] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:30:52,786 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:52] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:30:52,787 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:52] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:30:53,711 - INFO - 127.0.0.1 - - [23/Sep/2025 02:30:53] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:31:02,941 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:02] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:31:03,414 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=hi
+2025-09-23 02:31:03,854 - INFO - Connected to MongoDB
+2025-09-23 02:31:03,934 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:31:10,527 - INFO - Chat response: language=Hindi, status=success
+2025-09-23 02:31:10,528 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:10] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:31:29,486 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:29] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:31:40,066 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:31:40,085 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,091 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,093 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,102 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:31:40,431 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,461 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,465 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,468 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:31:40,473 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:31:40,478 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,491 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:31:40,869 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:31:40,872 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:31:40,901 - INFO - 127.0.0.1 - - [23/Sep/2025 02:31:40] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:32:05,825 - INFO - 127.0.0.1 - - [23/Sep/2025 02:32:05] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:32:05,867 - INFO - 127.0.0.1 - - [23/Sep/2025 02:32:05] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:32:05,870 - INFO - 127.0.0.1 - - [23/Sep/2025 02:32:05] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:32:06,715 - INFO - 127.0.0.1 - - [23/Sep/2025 02:32:06] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:35:22,160 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:22] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:35:22,167 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:22] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:35:22,171 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:22] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:35:23,454 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:23] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:35:41,266 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:41] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:35:41,270 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:41] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:35:41,273 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:41] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:35:42,182 - INFO - 127.0.0.1 - - [23/Sep/2025 02:35:42] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:37:55,927 - INFO - 127.0.0.1 - - [23/Sep/2025 02:37:55] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:37:55,990 - INFO - 127.0.0.1 - - [23/Sep/2025 02:37:55] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:37:56,365 - INFO - 127.0.0.1 - - [23/Sep/2025 02:37:56] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:37:56,863 - INFO - 127.0.0.1 - - [23/Sep/2025 02:37:56] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:39:18,471 - INFO - 127.0.0.1 - - [23/Sep/2025 02:39:18] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:39:18,476 - INFO - 127.0.0.1 - - [23/Sep/2025 02:39:18] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:39:18,492 - INFO - 127.0.0.1 - - [23/Sep/2025 02:39:18] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:39:18,880 - INFO - 127.0.0.1 - - [23/Sep/2025 02:39:18] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:41:16,048 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:16] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:41:16,052 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:16] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:41:16,053 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:16] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:41:16,526 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:16] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:41:33,930 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:33] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:41:34,138 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:34] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:41:34,142 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:34] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:41:34,429 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:34] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:41:35,472 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:35] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:41:35,648 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:35] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:41:35,652 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:35] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:41:35,857 - INFO - 127.0.0.1 - - [23/Sep/2025 02:41:35] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:46:24,521 - INFO - 127.0.0.1 - - [23/Sep/2025 02:46:24] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:46:24,554 - INFO - 127.0.0.1 - - [23/Sep/2025 02:46:24] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:46:24,557 - INFO - 127.0.0.1 - - [23/Sep/2025 02:46:24] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:46:25,328 - INFO - 127.0.0.1 - - [23/Sep/2025 02:46:25] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:50:46,933 - INFO - 127.0.0.1 - - [23/Sep/2025 02:50:46] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:50:46,945 - INFO - 127.0.0.1 - - [23/Sep/2025 02:50:46] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:50:46,958 - INFO - 127.0.0.1 - - [23/Sep/2025 02:50:46] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:50:47,491 - INFO - 127.0.0.1 - - [23/Sep/2025 02:50:47] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:51:10,623 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:10] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:51:10,795 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:10] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:51:10,817 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:10] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:51:11,130 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:11] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:51:17,290 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:17] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:51:17,291 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:17] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:51:17,293 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:17] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:51:17,896 - INFO - 127.0.0.1 - - [23/Sep/2025 02:51:17] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:52:04,865 - INFO - 127.0.0.1 - - [23/Sep/2025 02:52:04] "GET /health HTTP/1.1" 200 -
+2025-09-23 02:52:05,116 - INFO - 127.0.0.1 - - [23/Sep/2025 02:52:05] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 02:52:05,119 - INFO - 127.0.0.1 - - [23/Sep/2025 02:52:05] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 02:52:05,267 - INFO - 127.0.0.1 - - [23/Sep/2025 02:52:05] "GET /languages HTTP/1.1" 200 -
+2025-09-23 02:57:10,686 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-23 02:57:10,748 - INFO - Models loaded from models/
+2025-09-23 02:57:10,748 - INFO - Outbreak Prediction API initialized successfully
+2025-09-23 02:57:10,748 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-23 02:57:10,774 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-23 02:57:10,774 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 02:57:19,237 - INFO - 127.0.0.1 - - [23/Sep/2025 02:57:19] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:57:19,341 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:57:19,387 - INFO - Connected to MongoDB
+2025-09-23 02:57:19,434 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:57:21,891 - INFO - Chat response: language=English, status=success
+2025-09-23 02:57:21,892 - INFO - 127.0.0.1 - - [23/Sep/2025 02:57:21] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:57:38,930 - INFO - 127.0.0.1 - - [23/Sep/2025 02:57:38] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:57:39,035 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:57:39,039 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:57:40,531 - INFO - Chat response: language=English, status=success
+2025-09-23 02:57:40,532 - INFO - 127.0.0.1 - - [23/Sep/2025 02:57:40] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:58:11,293 - INFO - 127.0.0.1 - - [23/Sep/2025 02:58:11] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:58:11,407 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:58:11,409 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:58:12,479 - INFO - Chat response: language=English, status=success
+2025-09-23 02:58:12,481 - INFO - 127.0.0.1 - - [23/Sep/2025 02:58:12] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:58:20,796 - INFO - 127.0.0.1 - - [23/Sep/2025 02:58:20] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:58:21,020 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:58:21,022 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:58:21,868 - INFO - Chat response: language=English, status=success
+2025-09-23 02:58:21,869 - INFO - 127.0.0.1 - - [23/Sep/2025 02:58:21] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:58:52,844 - INFO - 127.0.0.1 - - [23/Sep/2025 02:58:52] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:58:52,976 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:58:52,980 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:58:53,932 - INFO - Chat response: language=English, status=success
+2025-09-23 02:58:53,933 - INFO - 127.0.0.1 - - [23/Sep/2025 02:58:53] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:59:07,072 - INFO - 127.0.0.1 - - [23/Sep/2025 02:59:07] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:59:07,185 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:59:07,188 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:59:08,409 - INFO - Chat response: language=English, status=success
+2025-09-23 02:59:08,410 - INFO - 127.0.0.1 - - [23/Sep/2025 02:59:08] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:59:26,098 - INFO - 127.0.0.1 - - [23/Sep/2025 02:59:26] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:59:26,217 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:59:26,219 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:59:27,230 - INFO - Chat response: language=English, status=success
+2025-09-23 02:59:27,232 - INFO - 127.0.0.1 - - [23/Sep/2025 02:59:27] "POST /chat HTTP/1.1" 200 -
+2025-09-23 02:59:40,800 - INFO - Successfully connected to MongoDB database: healthmonitoring
+2025-09-23 02:59:40,843 - INFO - Models loaded from models/
+2025-09-23 02:59:40,844 - INFO - Outbreak Prediction API initialized successfully
+2025-09-23 02:59:40,844 - INFO - Multilingual Health Chatbot initialized successfully
+2025-09-23 02:59:40,855 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.236:5000
+2025-09-23 02:59:40,857 - INFO - [33mPress CTRL+C to quit[0m
+2025-09-23 02:59:45,939 - INFO - 127.0.0.1 - - [23/Sep/2025 02:59:45] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 02:59:46,081 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 02:59:46,093 - INFO - Connected to MongoDB
+2025-09-23 02:59:46,099 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 02:59:53,494 - INFO - Chat response: language=English, status=success
+2025-09-23 02:59:53,495 - INFO - 127.0.0.1 - - [23/Sep/2025 02:59:53] "POST /chat HTTP/1.1" 200 -
+2025-09-23 03:00:14,166 - INFO - 127.0.0.1 - - [23/Sep/2025 03:00:14] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:00:14,379 - INFO - 127.0.0.1 - - [23/Sep/2025 03:00:14] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:00:14,405 - INFO - 127.0.0.1 - - [23/Sep/2025 03:00:14] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:00:14,448 - INFO - 127.0.0.1 - - [23/Sep/2025 03:00:14] "GET /languages HTTP/1.1" 200 -
+2025-09-23 03:04:12,759 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:12] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:04:12,762 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:12] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:04:12,766 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:12] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:04:13,300 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:13] "GET /languages HTTP/1.1" 200 -
+2025-09-23 03:04:29,240 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:29] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:04:29,436 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:29] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:04:29,458 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:29] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:04:29,941 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:29] "GET /languages HTTP/1.1" 200 -
+2025-09-23 03:04:34,724 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:34] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 03:04:34,836 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 03:04:34,842 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 03:04:42,190 - INFO - Chat response: language=English, status=success
+2025-09-23 03:04:42,192 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:42] "POST /chat HTTP/1.1" 200 -
+2025-09-23 03:04:46,736 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:46] "POST /detect-language HTTP/1.1" 200 -
+2025-09-23 03:04:46,874 - INFO - Chat request: user_type=asha_worker, village_id=VILLAGE_001, language=en
+2025-09-23 03:04:46,881 - INFO - Village data retrieved for VILLAGE_001: True
+2025-09-23 03:04:53,001 - INFO - Chat response: language=English, status=success
+2025-09-23 03:04:53,002 - INFO - 127.0.0.1 - - [23/Sep/2025 03:04:53] "POST /chat HTTP/1.1" 200 -
+2025-09-23 03:05:10,101 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:10] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:05:10,103 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:10] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:05:10,105 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:10] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:05:10,564 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:10] "GET /languages HTTP/1.1" 200 -
+2025-09-23 03:05:20,527 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:20] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:05:20,746 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:20] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:05:20,779 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:20] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:05:21,069 - INFO - 127.0.0.1 - - [23/Sep/2025 03:05:21] "GET /languages HTTP/1.1" 200 -
+2025-09-23 03:07:24,321 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:24] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:07:24,502 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:24] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:07:24,515 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:24] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:07:24,816 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:24] "GET /languages HTTP/1.1" 200 -
+2025-09-23 03:07:25,737 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:25] "[33mGET /user/progress HTTP/1.1[0m" 404 -
+2025-09-23 03:07:25,935 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:25] "GET /health HTTP/1.1" 200 -
+2025-09-23 03:07:25,938 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:25] "[33mGET /educational/modules HTTP/1.1[0m" 404 -
+2025-09-23 03:07:26,266 - INFO - 127.0.0.1 - - [23/Sep/2025 03:07:26] "GET /languages HTTP/1.1" 200 -

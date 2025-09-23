@@ -129,8 +129,8 @@ class OutbreakPredictionSystem:
 
     def create_synthetic_data(self, num_villages: int = 20, days: int = 90) -> bool:
         """
-        Generate synthetic data for testing and demonstration.
-
+        Generate synthetic data for testing and demonstration with more realistic correlations.
+        
         Args:
             num_villages (int): Number of villages to generate data for
             days (int): Number of days of historical data
@@ -139,17 +139,13 @@ class OutbreakPredictionSystem:
             bool: True if data created successfully
         """
         try:
-            logger.info("Generating synthetic data for testing...")
+            logger.info("Generating improved synthetic data...")
 
-            # Village IDs
             village_ids = [f"VILLAGE_{i:03d}" for i in range(1, num_villages + 1)]
-
-            # Date range
             end_date = datetime.now()
             start_date = end_date - timedelta(days=days)
             date_range = pd.date_range(start=start_date, end=end_date, freq='D')
 
-            # Collections to populate
             collections = {
                 'symptom_reports': [],
                 'water_quality': [],
@@ -157,111 +153,85 @@ class OutbreakPredictionSystem:
                 'training_data': []
             }
 
-            np.random.seed(42)  # For reproducible results
+            np.random.seed(42)
 
             for village_id in village_ids:
-                base_risk = np.random.uniform(0.1, 0.8)  # Base risk level for village
+                # Base factors for a more nuanced risk calculation
+                base_symptoms = np.random.uniform(1, 5)
+                base_water_quality = np.random.uniform(0.1, 0.5)
+                base_environment = np.random.uniform(0, 0.2)
 
                 for date in date_range:
                     date_str = date.strftime('%Y-%m-%d')
+                    
+                    # Generate random noise for each day
+                    noise = np.random.normal(0, 0.1)
 
-                    # Generate correlated data (higher symptoms = higher risk)
-                    risk_multiplier = 1 + np.random.normal(0, 0.3)
-                    current_risk = min(max(base_risk * risk_multiplier, 0.05), 0.95)
+                    # --- Generate data based on a more complex, correlated model ---
 
-                    # Symptom Reports
-                    if current_risk > 0.6:  # High risk scenario
-                        diarrhea = max(0, int(np.random.poisson(8)))
-                        vomiting = max(0, int(np.random.poisson(5)))
-                        fever = max(0, int(np.random.poisson(12)))
-                    elif current_risk > 0.3:  # Medium risk
-                        diarrhea = max(0, int(np.random.poisson(3)))
-                        vomiting = max(0, int(np.random.poisson(2)))
-                        fever = max(0, int(np.random.poisson(5)))
-                    else:  # Low risk
-                        diarrhea = max(0, int(np.random.poisson(1)))
-                        vomiting = max(0, int(np.random.poisson(0.5)))
-                        fever = max(0, int(np.random.poisson(2)))
+                    # A. Symptoms (core driver of outbreaks)
+                    symptom_risk_factor = np.clip(base_symptoms + np.random.normal(0, 1), 1, 15)
+                    diarrhea = int(np.random.poisson(symptom_risk_factor * 0.5))
+                    vomiting = int(np.random.poisson(symptom_risk_factor * 0.3))
+                    fever = int(np.random.poisson(symptom_risk_factor * 0.8))
 
-                    collections['symptom_reports'].append({
-                        'village_id': village_id,
-                        'date': date_str,
-                        'diarrhea_cases': diarrhea,
-                        'vomiting_cases': vomiting,
-                        'fever_cases': fever,
-                        'reported_by': f"health_worker_{np.random.randint(1, 6)}"
-                    })
+                    # B. Water Quality (increases risk, especially with poor quality)
+                    # This now has a more independent relationship to the final outbreak probability
+                    water_risk_factor = np.clip(base_water_quality + np.random.normal(0, 0.2), 0.1, 1.0)
+                    ph_level = np.clip(7.0 - (water_risk_factor * 2) + np.random.normal(0, 0.5), 5.0, 9.0)
+                    turbidity = np.clip(water_risk_factor * 15 + np.random.normal(0, 2), 1, 20)
+                    tds = np.clip(water_risk_factor * 800 + np.random.normal(0, 100), 200, 1500)
 
-                    # Water Quality (poor quality increases risk)
-                    if current_risk > 0.6:
-                        ph_level = np.random.uniform(5.5, 6.0)  # Acidic
-                        turbidity = np.random.uniform(8, 15)  # High turbidity
-                        tds = np.random.uniform(800, 1200)  # High TDS
-                    else:
-                        ph_level = np.random.uniform(6.5, 8.5)  # Normal
-                        turbidity = np.random.uniform(1, 5)  # Low turbidity
-                        tds = np.random.uniform(200, 600)  # Normal TDS
-
-                    collections['water_quality'].append({
-                        'village_id': village_id,
-                        'date': date_str,
-                        'ph_level': round(ph_level, 2),
-                        'turbidity': round(turbidity, 2),
-                        'tds': round(tds, 2),
-                        'sensor_id': f"sensor_{village_id}_water"
-                    })
-
-                    # Environment Data
+                    # C. Environment (monsoon season, high humidity/temp increase risk)
                     season_map = {1: 'winter', 2: 'winter', 3: 'spring', 4: 'spring',
                                   5: 'spring', 6: 'summer', 7: 'summer', 8: 'summer',
-                                  9: 'monsoon', 10: 'monsoon', 11: 'winter', 12: 'winter'}
-                    season = season_map[date.month]
+                                  9: 'monsoon', 10: 'monsoon', 11: 'monsoon', 12: 'winter'}
+                    season = season_map.get(date.month, 'winter')
 
-                    # Monsoon season increases risk
+                    env_risk_factor = base_environment + noise
                     if season == 'monsoon':
-                        rainfall = np.random.uniform(10, 50)
-                        humidity = np.random.uniform(70, 95)
+                        env_risk_factor += 0.5 # Significant risk increase in monsoon
+                        rainfall = np.random.uniform(15, 60)
+                        humidity = np.random.uniform(80, 100)
                         temperature = np.random.uniform(25, 35)
-                    elif season == 'summer':
-                        rainfall = np.random.uniform(0, 5)
-                        humidity = np.random.uniform(40, 70)
-                        temperature = np.random.uniform(30, 45)
-                    else:  # winter/spring
-                        rainfall = np.random.uniform(0, 10)
-                        humidity = np.random.uniform(50, 80)
-                        temperature = np.random.uniform(15, 30)
+                    else:
+                        rainfall = np.random.uniform(0, 15)
+                        humidity = np.random.uniform(40, 80)
+                        temperature = np.random.uniform(15, 45)
 
-                    collections['environment'].append({
-                        'village_id': village_id,
-                        'date': date_str,
-                        'rainfall': round(rainfall, 2),
-                        'season': season,
-                        'temperature': round(temperature, 2),
-                        'humidity': round(humidity, 2)
+                    # D. Final Outbreak Probability (the target variable)
+                    # A more complex combination of factors, including the latest symptom data
+                    symptom_weight = np.log1p(diarrhea + vomiting + fever) * 0.3
+                    water_weight = water_risk_factor * 0.2
+                    env_weight = env_risk_factor * 0.1
+                    
+                    # Add more complexity and lessen the direct link between water quality and risk
+                    outbreak_prob = np.clip(symptom_weight + water_weight + env_weight + np.random.normal(0, 0.05), 0, 1)
+
+                    outbreak_occurred = 1 if np.random.random() < outbreak_prob else 0
+
+                    # Append to collections
+                    collections['symptom_reports'].append({
+                        'village_id': village_id, 'date': date_str, 'diarrhea_cases': diarrhea,
+                        'vomiting_cases': vomiting, 'fever_cases': fever, 'reported_by': f"health_worker_{np.random.randint(1, 6)}"
                     })
-
-                    # Training Data (outbreak labels)
-                    # Higher risk villages more likely to have outbreaks
-                    outbreak_probability = current_risk
-                    if season == 'monsoon':
-                        outbreak_probability *= 1.3  # Increase during monsoon
-
-                    outbreak_occurred = 1 if np.random.random() < outbreak_probability else 0
-
+                    collections['water_quality'].append({
+                        'village_id': village_id, 'date': date_str, 'ph_level': round(ph_level, 2),
+                        'turbidity': round(turbidity, 2), 'tds': round(tds, 2), 'sensor_id': f"sensor_{village_id}_water"
+                    })
+                    collections['environment'].append({
+                        'village_id': village_id, 'date': date_str, 'rainfall': round(rainfall, 2),
+                        'season': season, 'temperature': round(temperature, 2), 'humidity': round(humidity, 2)
+                    })
                     collections['training_data'].append({
-                        'village_id': village_id,
-                        'date': date_str,
-                        'outbreak_occurred': outbreak_occurred,
-                        'notes': f"Generated data - risk level: {current_risk:.2f}"
+                        'village_id': village_id, 'date': date_str, 'outbreak_occurred': outbreak_occurred,
+                        'notes': f"Generated data - prob: {outbreak_prob:.2f}"
                     })
 
             # Insert data into MongoDB
             for collection_name, data in collections.items():
                 if data:
-                    # Clear existing data
                     self.db[collection_name].delete_many({})
-
-                    # Insert new data
                     result = self.db[collection_name].insert_many(data)
                     logger.info(f"Inserted {len(result.inserted_ids)} records into {collection_name}")
 
@@ -475,7 +445,7 @@ class OutbreakPredictionSystem:
 
             logger.info("Top 10 Most Important Features:")
             for _, row in feature_importance.head(10).iterrows():
-                logger.info(f"  {row['feature']}: {row['importance']:.3f}")
+                logger.info(f"   {row['feature']}: {row['importance']:.3f}")
 
             # Train anomaly detection model
             logger.info("Training anomaly detection model...")
@@ -534,11 +504,11 @@ class OutbreakPredictionSystem:
 
             # Determine risk level
             if outbreak_prob >= 0.7:
-                risk_level = "High"
+                risk_level = "HIGH"
             elif outbreak_prob >= 0.3:
-                risk_level = "Medium"
+                risk_level = "MEDIUM"
             else:
-                risk_level = "Low"
+                risk_level = "LOW"
 
             result = {
                 'village_id': data.get('village_id', 'Unknown'),
@@ -885,7 +855,7 @@ def demonstrate_system():
                 if batch_predictions:
                     logger.info("   Sample Batch Predictions:")
                     for i, pred in enumerate(batch_predictions[:3]):  # Show first 3
-                        logger.info(f"    Village {pred['village_id']}: {pred['risk_level']} "
+                        logger.info(f"      Village {pred['village_id']}: {pred['risk_level']} "
                                     f"({pred['risk_probability']:.1%} probability)")
 
                 # Save predictions to MongoDB
@@ -893,7 +863,7 @@ def demonstrate_system():
                 save_success = system.save_predictions_to_mongodb(batch_predictions)
 
                 if save_success:
-                    logger.info("    Predictions saved successfully!")
+                    logger.info("      Predictions saved successfully!")
 
                 # Demonstrate model loading
                 logger.info("10. Testing model loading from disk...")
@@ -901,11 +871,11 @@ def demonstrate_system():
                 load_success = new_system.load_models()
 
                 if load_success:
-                    logger.info("    Models loaded successfully!")
+                    logger.info("      Models loaded successfully!")
 
                     # Test prediction with loaded models
                     test_prediction = new_system.predict_outbreak_risk(sample_data)
-                    logger.info("    Test prediction with loaded models successful!")
+                    logger.info("      Test prediction with loaded models successful!")
 
                 logger.info("="*60)
                 logger.info("DEMONSTRATION COMPLETED SUCCESSFULLY!")
@@ -917,10 +887,10 @@ def demonstrate_system():
                 low_risk_count = sum(1 for p in batch_predictions if p.get('risk_level') == 'Low')
 
                 logger.info("SUMMARY STATISTICS:")
-                logger.info(f"  High Risk Villages: {high_risk_count}")
-                logger.info(f"  Medium Risk Villages: {medium_risk_count}")
-                logger.info(f"  Low Risk Villages: {low_risk_count}")
-                logger.info(f"  Total Villages Analyzed: {len(batch_predictions)}")
+                logger.info(f"   High Risk Villages: {high_risk_count}")
+                logger.info(f"   Medium Risk Villages: {medium_risk_count}")
+                logger.info(f"   Low Risk Villages: {low_risk_count}")
+                logger.info(f"   Total Villages Analyzed: {len(batch_predictions)}")
 
             else:
                 logger.error("Model training failed!")
@@ -956,8 +926,7 @@ class OutbreakPredictionAPI:
     """
 
     def __init__(self, mongodb_url: str):
-        # Update connection string to a local database
-        self.system = OutbreakPredictionSystem("mongodb://localhost:27017/")
+        self.system = OutbreakPredictionSystem(mongodb_url)
 
     def initialize_system(self) -> dict:
         """Initialize system and train models if needed"""
