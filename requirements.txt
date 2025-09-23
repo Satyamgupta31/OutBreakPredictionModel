@@ -1,4 +1,5 @@
 numpy==1.24.3
+<<<<<<< Updated upstream
 Flask==3.0.3
 Flask-Cors==3.0.10
 waitress==3.0.0
@@ -9,4 +10,3 @@ pandas==2.2.2
 gunicorn==20.1.0
 setuptools>=68.0.0
 wheel>=0.41.0
-nixpacks
