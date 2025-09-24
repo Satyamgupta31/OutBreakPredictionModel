@@ -11,7 +11,7 @@ import re
 # Configuration
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://localhost:27017/")
 DB_NAME = os.getenv("DB_NAME", "healthmonitoring")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAoxaxF3PysMG3YIA4KTecD305at1IQl3o")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "USE_YOUR_API_KEY")
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
